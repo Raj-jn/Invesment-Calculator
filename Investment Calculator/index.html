@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Investment Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Investment Calculator</h1>
+  <div class="box">
+    <form>
+      <div class="form-group">
+        <label for="initial-investment">Initial Investment:</label>
+        <input type="number" id="initial-investment" required />
+      </div>
+      <div class="form-group">
+        <label for="monthly-contribution">Monthly Contribution:</label>
+        <input type="number" id="monthly-contribution" required />
+      </div>
+      <div class="form-group">
+        <label for="interest-rate">Interest Rate:</label>
+        <input type="number" id="interest-rate" required />
+      </div>
+      <div class="form-group">
+        <label for="investment-term">Investment Term (in years):</label>
+        <select id="investment-term" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+        </select>
+      </div>
+      <button type="button" id="calculate-btn">Calculate</button>
+    </form>
+    <div id="results">
+      <div class="result">
+        <label>Future Value:</label>
+        <span id="future-value">$0</span>
+      </div>
+      <div class="result">
+        <label>Total Contributions:</label>
+        <span id="total-contributions">$0</span>
+      </div>
+      <div class="result">
+        <label>Total Interest:</label>
+        <span id="total-interest">$0</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
